@@ -1,0 +1,26 @@
+<Window x:Class="LaHuevonadaManager.Views.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LaHuevonada Manager" Height="620" Width="980" WindowStartupLocation="CenterScreen"
+        Icon="/Assets/app.ico" Background="#F7F8FA">
+    <Grid Margin="34">
+        <Grid.ColumnDefinitions><ColumnDefinition Width="1.1*"/><ColumnDefinition Width="1*"/></Grid.ColumnDefinitions>
+        <Border Background="White" CornerRadius="28" Padding="35" Margin="0,0,18,0">
+            <StackPanel VerticalAlignment="Center">
+                <Image Source="/Assets/logo.png" Width="210" Height="210" HorizontalAlignment="Left"/>
+                <TextBlock Text="LaHuevonada Manager" FontSize="40" FontWeight="Bold" Margin="0,22,0,0"/>
+                <TextBlock Text="Controla producción, ventas, clientes, gastos e inventario en un solo lugar." TextWrapping="Wrap" FontSize="17" Foreground="#555" Margin="0,10,20,0"/>
+                <TextBlock Text="Sin internet • Archivo propio .lahuevonada • Copias automáticas" FontSize="14" Foreground="#2E7D32" Margin="0,18,0,0" FontWeight="SemiBold"/>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="1" Background="White" CornerRadius="28" Padding="32">
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock Text="Empezar" FontSize="30" FontWeight="Bold"/>
+                <TextBlock Text="Crea un archivo nuevo de granja o abre uno existente." Foreground="#666" TextWrapping="Wrap" Margin="0,6,0,28"/>
+                <Button Style="{StaticResource PrimaryButton}" Height="54" FontSize="16" Click="CreateFile_Click">Crear archivo de granja</Button>
+                <Button Height="54" Margin="4,12,4,4" FontSize="16" Click="OpenFile_Click">Abrir archivo .lahuevonada</Button>
+                <TextBlock Text="Recomendación: guarda el archivo en una carpeta fácil de copiar o en una USB." Foreground="#777" TextWrapping="Wrap" Margin="0,24,0,0"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

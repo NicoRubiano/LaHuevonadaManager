@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+    <AssemblyName>LaHuevonadaManager</AssemblyName>
+    <RootNamespace>LaHuevonadaManager</RootNamespace>
+    <Version>1.0.0</Version>
+    <Company>LaHuevonada</Company>
+    <Product>LaHuevonada Manager</Product>
+    <Copyright>LaHuevonada Manager</Copyright>
+  </PropertyGroup>
+  <ItemGroup>
+    <Resource Include="Assets\logo.png" />
+    <Resource Include="Assets\app.ico" />
+  </ItemGroup>
+</Project>
